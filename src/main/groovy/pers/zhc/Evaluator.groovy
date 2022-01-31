@@ -11,6 +11,7 @@ class Evaluator {
             print "> "
             System.out.flush()
             def s = sc.nextLine()
+            if (s.isEmpty()) continue
             try {
                 def result = shell.evaluate(s)
                 def resList = shell.getProperty("res")
